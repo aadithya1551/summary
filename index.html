@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Summary</title>
+   <script src="https://kit.fontawesome.com/4a3953399a.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+   <title>Document</title>
+   <style>
+   
+      .container{
+         display: flex;
+         margin-left: 400px;
+         margin-right: 400px;
+         margin-top: 100px;
+         font-family: 'Hanken Grotesk', sans-serif;
+      }
+
+      .first{
+         color: white;
+         background-image: linear-gradient(rgba(57, 54, 185, 0.8), rgb(38, 36, 151));
+         width: 255px;
+         text-align: center;
+         border-radius: 20px;
+      }
+
+      .score{
+         background-image: linear-gradient(rgb(38, 36, 151),rgba(57, 54, 185, 0.7));
+         margin: 30px;
+         margin-bottom: 10px;
+         padding: 3px;
+         margin-left: 65px;
+         margin-right: 65px;
+         border-radius: 150px;
+      }
+
+      .first h4{
+         opacity: 0.7;
+      }
+
+      .first h1{
+         margin: 20px;
+         margin-bottom: -20px;
+         font-size: 50px;
+      }
+
+      .first h5{
+         opacity: 0.5;
+      }
+
+      .first p{
+         margin-top: 15px;
+         margin-bottom: 30px;
+         margin-left: 40px;
+         margin-right: 40px;
+         font-size: 15px;
+         opacity: 0.7;
+      }
+      .second{
+         
+         width: 255px;
+         position: relative;
+         right: 20px;
+         border-top-right-radius: 20px;
+         border-bottom-right-radius: 20px;
+         box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      ul{
+         list-style-type: none;
+      }
+
+      ul li{
+         margin-bottom: 20px;
+         margin-right: 20px;
+         padding: 8px;
+         border-radius: 5px;
+         font-weight: bold;
+         font-size: 15px;
+      }
+
+      li h5{
+         display: inline;
+         font-weight: bold;
+      }
+
+      li span{
+         opacity: 0.6;
+      }
+
+      button{
+         width: 12pc;
+         padding: 10px;
+         border: none;
+         border-radius:  20px;
+         color: white;
+         background-color: rgb(5, 5, 73);
+      }
+
+      img{
+         height: 18px;
+         width: 18px;
+         position: relative;
+         top: 5px;
+      }
+
+      @media (max-width: 600px){
+      .container{
+         flex-direction: column;
+         margin: 10px;  
+      }
+      .second{
+         position: relative;
+         left: 0px; 
+         border-top-right-radius: 0px;
+         border-bottom-right-radius: 0px;
+         box-shadow: 0px 0px 0px;
+      }
+      ul{
+         margin-left: -18px;
+      }
+
+      button{
+         margin-left: 10px;
+      }
+   }
+
+
+
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="first">
+         <h4>Your Result</h4>
+         <div class="score">
+            <h1>76</h1>
+            <h5>of 100</h5>
+         </div>
+         <h3>Great</h3>
+         <p>you scored higher than 65% of the people who taken these test</p>
+      </div>
+      <div class="second">
+         <ul>
+            <h4>Summary</h4>
+            <li style="background-color: rgb(255, 243, 243);"> <img src="icon-reaction.svg" alt=""> <h5 style="color: rgb(216, 62, 62);margin-right: 55px;">Reaction</h5>80<span>/100</span></li>
+            <li style="background-color: rgb(247, 240, 230);"> <img src="icon-memory.svg" alt="">  <h5 style="color: rgb(238, 183, 81);margin-right: 58px;">Memory</h5>92<span>/100</span></li>
+            <li style="background-color: rgb(236, 250, 238);"> <img src="icon-verbal.svg" alt="">  <h5 style="color: rgb(79, 146, 83);margin-right: 68px;">Verbal</h5>61<span>/100</span></li>
+            <li style="background-color: rgb(235, 238, 250);"> <img src="icon-visual.svg" alt=""> <h5 style="color: rgb(81, 91, 136);margin-right: 68px;">Visual</h5>72<span>/100</span></li>
+            <button>Continue</button>
+         </ul>
+      </div>
+   </div>
+</body>
+</html>
